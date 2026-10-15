@@ -1,0 +1,16 @@
+{
+  "name": "marketizzati-web",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Marketizzati — sito multilingua per Marco Villalva, sviluppatore freelance",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:production": "node scripts/build.mjs --production",
+    "dev": "node scripts/build.mjs && node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs",
+    "test": "node scripts/build.mjs && node --test tests/site.test.mjs",
+    "check": "node --check scripts/build.mjs && node --check public/assets/app.js && npm test"
+  }
+}
